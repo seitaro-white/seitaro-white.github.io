@@ -1,0 +1,133 @@
+
+
+/* --- Basic Setup --- */
+body {
+    background-color: #f9f5f1; /* Orange background */
+    color: #000000; /* Dark grey text */
+    font-family: 'Source Serif 4', 'Arial', serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px; /* Or any width you prefer */
+    margin: 0 auto; /* This centers the container */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* --- Typography & Links --- */
+h1 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #333333; /* Dark grey links */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none; /* Underline vanishes on hover */
+}
+
+/* --- Column Layout (Desktop First) --- */
+
+/* Left (Fixed) Column */
+.left-column {
+    width: 35%; /* Use a simple percentage */
+    height: 100vh;
+    position: sticky; /* The key change! */
+    top: 0; /* Tells it to stick to the top */
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-content-bottom nav a {
+    display: block; /* Makes links stack vertically */
+    margin-top: 0.5rem;
+    text-decoration: underline; /* Ensures bottom links are underlined by default */
+}
+
+
+/* Right (Scrollable) Column */
+.right-column {
+    width: 65%; /* The remaining percentage */
+    padding: 3rem;
+    padding-top: 5rem;
+    box-sizing: border-box;
+}
+
+/* --- Project Styling --- */
+.project {
+    margin-bottom: 4rem;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.project-year {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+
+.tech-stack {
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.project:not(:last-child) {
+    border-bottom: 1px solid #593300; /* Adds the line */
+    padding-bottom: 2rem;               /* Adds space above the line */
+    margin-bottom: 2rem;                /* Adds space below the line */
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Allow full width on mobile */
+        flex-direction: column;
+    }
+
+    .left-column {
+        position: static; /* Un-stick the column */
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        justify-content: flex-start;
+    }
+
+    .left-content-bottom {
+        margin-top: 2rem;
+    }
+
+    /* Right column takes full width */
+    .right-column {
+        width: 100%;
+        margin-left: 0; /* Remove the offset */
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

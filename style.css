@@ -119,13 +119,24 @@ a:hover {
 
 .project-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Pushes children to opposite ends */
+    align-items: flex-start;      /* Aligns items to the top */
     margin-bottom: 1rem;
+}
+
+.project-info-left {
+    /* This new container holds the year and role */
+    display: flex;
+    flex-direction: column; /* Stacks year and role vertically */
 }
 
 .project-year {
     font-weight: bold;
+}
+
+.project-role {
+    /* New style for the role text */
+    margin-top: 0.25rem; /* Adds a little space below the year */
 }
 
 

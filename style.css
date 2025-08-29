@@ -132,11 +132,19 @@ a:hover {
 
 .project-year {
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .project-role {
     /* New style for the role text */
     margin-top: 0.25rem; /* Adds a little space below the year */
+    font-size: 1.1rem;
+}
+
+.project-link {
+    /* New style for the role text */
+    margin-top: 0.25rem; /* Adds a little space below the year */
+    font-size: 1rem;
 }
 
 

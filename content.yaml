@@ -25,8 +25,8 @@ projects:
     role: Project lead
     description: An annual report benchmarking countries on their level of AI development.
     responsibilities:
-      - Defining the methodology and overall focus for the Index, and leading dissemination and stakeholder engagement with industry/policy leaders.
-      - Built agentETL pipeline handling 100+ indicators from diverse sources using mixture of ML/Agentic research systems
+      - Methodology and overall focus for the Index, and leading dissemination and stakeholder engagement with industry/policy leaders.
+      - Agent search/research & human review ETL pipeline for collecting and processing 100+ data indicators from various public & private sources.
     tech: [gcp, terraform, bigquery, langgraph]
 
   - name: 🎈 hot-air
@@ -47,12 +47,12 @@ projects:
     description: >-
       Data investigation and interactive visual tool on the  UK House of Lords winner of the Royal Society of Statistics' [2025 Data Visualisation award](https://rss.org.uk/news-publication/news-publications/2025/general-news/statistical-excellence-in-journalism-awards-2025-w/) for Statistical Excellence in Journalism.
     responsibilities:
-      - Developed core "Archetype" conceptual model for understanding Lords from statistical patterns of behaviour built up from public records and activity.
-      - Built conflict-of-interest identification system for comparing member financial interests and hansard contributions; RAG & LLM summerisation/assesment of evidence with potential conflicts flagged to researchers and journalists, driving multiple stories (e.g. on [arms](https
+      - Core "Archetype" conceptual model for understanding Lords from statistical patterns of behaviour built up from public records and activity.
+      - RAG & LLM assesment system for identifying potential financial conflicts-of-interest; automatic search & analysis of Lord financial interests and hansard activity to flag to journalists, driving [multiple](https
          ://www.tortoisemedia.com/2024/12/11/tory-peers-unregistered-weapons-interests-prompt-account
-         ability-black-hole-warning) and [oil & gas](https://www.tortoisemedia.com/2024/11/22/peers-s
+         ability-black-hole-warning) [reporting threads](https://www.tortoisemedia.com/2024/11/22/peers-s
          peak-on-net-zero-policies-without-declaring-fossil-fuel-shareholdings)).
-    tech: [scikit-learn, spacy, open-ai]
+    tech: [scikit-learn, open-ai, pgvector]
 
   - name: 💰 westminster-accounts
     url: https://observer.co.uk/data/the-westminster-accounts
@@ -65,7 +65,7 @@ projects:
       - Built graph database and visual tool for identifying relationships between MPs and financial interests, for the purposes of journalistic investigation.
       - Developed custom ML techniques for tracing entities and reconciling different company names.
       - Maintaining automated pipeline for updating the backend database with new financial interests on fortnightly basis.
-    tech: [neo4j, python, gensim]
+    tech: [neo4j, spacy, docker]
 
   - name: 📚 town-library
     url: https://www.townlegal.com/news-and-resources/
@@ -77,7 +77,7 @@ projects:
       - Planning Inspectorate and Court Case Explorers - built public dashboards tracking planning appeals and cases over time
       - Planning Appeals Map - interactive map of planning appeal decisions in UK between 2017-2024 by location.
       - "[Planning Court Case Network](https://simonicity.com/2020/10/10/planning-law-for-the-future/) - graph citation network of planning court cases"
-    tech: [ms-azure, docker, powerbi, wordpress, fast-api]
+    tech: [ms-azure, docker, azure-app-service, fast-api, wordpress]
 
 other_work:
   heading: "Other work:"
